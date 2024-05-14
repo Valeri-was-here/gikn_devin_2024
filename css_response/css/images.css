@@ -1,0 +1,68 @@
+/* Респонсив изображения */
+img.responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Изображения с заоблени ъгли */
+img.rounded {
+    border-radius: 15px;
+}
+
+/* Кръгли изображения */
+img.circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Позициониране на изображенията в различни части на блок */
+.img-top {
+    vertical-align: top;
+}
+
+.img-middle {
+    vertical-align: middle;
+}
+
+.img-bottom {
+    vertical-align: bottom;
+}
+
+/* Завъртане на изображение */
+.img-rotate-90 {
+    transform: rotate(90deg);
+}
+
+.img-rotate-180 {
+    transform: rotate(180deg);
+}
+
+.img-rotate-270 {
+    transform: rotate(270deg);
+}
+
+/* Хоризонтален и вертикален flip */
+.img-flip-horizontal {
+    transform: scaleX(-1);
+}
+
+.img-flip-vertical {
+    transform: scaleY(-1);
+}
+
+/* Стилове за демонстрация на изображения в контейнер */
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+img {
+    margin: 10px;
+}
