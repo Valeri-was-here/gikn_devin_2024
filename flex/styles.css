@@ -1,0 +1,129 @@
+/* styles.css */
+
+/* Основен стил за контейнерите и елементите */
+.container {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.item {
+    padding: 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Пример 1: flex-direction */
+.example1 {
+    flex-direction: row; /* Хоризонтално подреждане (по подразбиране) */
+}
+
+.example2 {
+    flex-direction: column; /* Вертикално подреждане */
+}
+
+/* Пример 2: flex-wrap */
+.example3 {
+    flex-wrap: wrap; /* Елементите се увиват на нов ред */
+    height: 150px; /* Ограничена височина, за да се демонстрира увиването */
+}
+
+/* Пример 3: justify-content */
+.example4 {
+    justify-content: space-between; /* Разпределя пространството между елементите */
+}
+
+/* Пример 4: align-items */
+.example5 {
+    align-items: center; /* Подравнява елементите вертикално в центъра */
+    height: 200px; /* Добавена височина за демонстрация на вертикалното подравняване */
+}
+
+/* Пример 5: flex-flow */
+.example6 {
+    flex-flow: row wrap; /* Комбинация от flex-direction и flex-wrap */
+    justify-content: center; /* Центрира елементите по главната ос */
+    align-content: center; /* Центрира редовете по кръстосаната ос */
+    height: 150px; /* Ограничена височина за демонстрация на увиване и подравняване */
+}
+
+/* Пример 6: align-content */
+.example7 {
+    flex-wrap: wrap; /* Елементите се увиват на нов ред */
+    align-content: space-around; /* Разпределя пространството около редовете */
+    height: 150px; /* Ограничена височина за демонстрация на увиване и подравняване */
+}
+
+/* Пример 7: Комбинация от различни свойства */
+.example8 {
+    flex-direction: column-reverse; /* Вертикално подреждане в обратен ред */
+    justify-content: center; /* Центрира елементите по главната ос */
+    align-items: flex-end; /* Подравнява елементите по кръстосаната ос към края */
+    height: 300px; /* Височина за демонстрация на вертикалното подравняване */
+}
+
+/* Допълнителни примери за свойствата на елементите */
+
+.container.items-order .item:nth-child(1) {
+    order: 3; /* Първият елемент ще се покаже трети */
+}
+
+.container.items-order .item:nth-child(2) {
+    order: 1; /* Вторият елемент ще се покаже първи */
+}
+
+.container.items-order .item:nth-child(3) {
+    order: 2; /* Третият елемент ще се покаже втори */
+}
+
+.container.items-grow .item:nth-child(1) {
+    flex-grow: 1; /* Първият елемент ще расте */
+}
+
+.container.items-grow .item:nth-child(2) {
+    flex-grow: 2; /* Вторият елемент ще расте два пъти повече */
+}
+
+.container.items-grow .item:nth-child(3) {
+    flex-grow: 3; /* Третият елемент ще расте три пъти повече */
+}
+
+.container.items-shrink .item:nth-child(1) {
+    flex-shrink: 1; /* Първият елемент ще се свива */
+}
+
+.container.items-shrink .item:nth-child(2) {
+    flex-shrink: 2; /* Вторият елемент ще се свива два пъти повече */
+}
+
+.container.items-shrink .item:nth-child(3) {
+    flex-shrink: 3; /* Третият елемент ще се свива три пъти повече */
+}
+
+.container.items-basis .item:nth-child(1) {
+    flex-basis: 100px; /* Първият елемент има базов размер 100px */
+}
+
+.container.items-basis .item:nth-child(2) {
+    flex-basis: 200px; /* Вторият елемент има базов размер 200px */
+}
+
+.container.items-basis .item:nth-child(3) {
+    flex-basis: 300px; /* Третият елемент има базов размер 300px */
+}
+
+.container.items-align .item:nth-child(1) {
+    align-self: flex-start; /* Първият елемент в началото */
+}
+
+.container.items-align .item:nth-child(2) {
+    align-self: center; /* Вторият елемент в центъра */
+}
+
+.container.items-align .item:nth-child(3) {
+    align-self: flex-end; /* Третият елемент в края */
+}
